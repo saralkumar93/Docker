@@ -1,0 +1,27 @@
+Docker --verson  
+docker run hello-world
+docker images
+docker pull hello-world
+docker pull openjdk
+docker pull openjdk:18
+docker search mysql-----image name
+docker ps--checking container runing or not
+docker ps - a 
+docker run --name pythonContainer1 -it python
+docker exec -it container ID python3 to go into container
+docker inspect 
+docker run --name javaContainer -it -d openjdk
+docker exec -it container name jshell
+docker stop pythonContainer1
+docker stop containerID or name -- to stop container
+docker rm containerID --to remove 
+docker rmi openjdk--- to remove image
+docker restart pythonContainer1
+docker login
+docker commit --save 
+docker push ---to push 
+docker copy 
+docker logs
+docker volume--data store
+docker logout
+
