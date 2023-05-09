@@ -1,19 +1,27 @@
 Docker --verson  
-docker run hello-world
+
+--------------------------------------
 docker images
 docker images - a hidden images or inactive immage
+------------------------------------------
 docker pull hello-world
 docker pull openjdk
 docker pull openjdk:18
+--------------------------------
 docker search mysql-----image name
+-----------------------------------
 docker ps-- list out container/ checking container runing or not
 docker ps -a -----inactive shows /active all container 
+--------------------------------------------------
 docker run --name pythonContainer1 -it python
-docker exec -it container ID python3 to go into container
-docker inspect <object>--it may be container or image --what my container are/ 
 docker run --name javaContainer -it -d openjdk
+docker run hello-world
+------------------------------------------
+docker exec -it container ID python3 to go into container
 docker exec -it container name  or Id jshell/bassh
 docker exec  container name  or Id jshell/bassh
+-------------------------------------------
+docker inspect <object>--it may be container or image --what my container are/ 
 
 docker stop pythonContainer1
 docker kill ID or name  ------- is it the force full way 
@@ -22,6 +30,7 @@ docker start container id------ to start
 docker rm containerID --to remove 
 docker rmi openjdk--- to remove image
 docker restart pythonContainer1
+------------------------------
 docker login
 docker commit --save 
 docker push ---to push 
