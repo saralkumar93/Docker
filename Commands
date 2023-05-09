@@ -24,4 +24,13 @@ docker copy
 docker logs
 docker volume--data store
 docker logout
+------------------------------------------
+create docker folder
+ create ubuntu-image folder
+ code . vc code shortcut
+-----------------------------
+ vs code-----Dockerfile
+ docker extension install for more features  and suggestion
+ 
+
 
