@@ -32,5 +32,10 @@ create docker folder
  vs code-----Dockerfile
  docker extension install for more features  and suggestion
  docker build -t myubuntuimage . ----build image 
+ 
+ docker run --name myubuntuContainer myubuntuimage...... to run image
+ 
+ 
+ FROM 
 
 
