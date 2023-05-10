@@ -27,12 +27,16 @@ docker stop pythonContainer1
 docker kill ID or name  ------- is it the force full way 
 docker stop containerID or name -- to stop container
 docker start container id------ to start
+-----------------------------------
 docker rm containerID --to remove 
 docker rmi openjdk--- to remove image
+-----------------------------------
 docker restart pythonContainer1
 ------------------------------
-docker login
-docker commit --save 
+docker login---docker registry
+docker login -u USN -p PASSWORD
+---------------------------------
+docker commit --create the custom image 
 docker push ---to push 
 docker copy 
 docker logs  container name or container iD
@@ -52,6 +56,17 @@ create docker folder
  docker run -p 9091:9091 -----port number 9090system : 9091 container
 -------------------------- 
  docker run --name myubuntuContainer myubuntuimage...... to run image
- 
+ --------------------------------
+ docker export--output filename .tar container Id
+ docker export -o file name.tar container id
+ import filename.tar 
+ -----------------------------
+ docker push image name
+ -----------------------------
+ docker build -t ubuntu_custom .-------search for Dockerfile
+ -------------------------------
+ dokcer-commpose -f filename up----for services up
+ docker-commpose -f filename up -d-----detatched state
+ docker-compose -f filename down ----for service down
  
 
