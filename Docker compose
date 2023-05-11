@@ -1,0 +1,30 @@
+Compose is a tool for defining and running multi container docker applicaitions.
+with compose you use a YAML file to configure you applications services.
+--------------------
+docker-compose.yml
+--------------------
+version: '3'
+services:
+   user:
+      container_name:user_service
+      build:
+      ports:
+         -8081:9091
+   department:
+     container_name: department_service
+     build:
+     context: ./department-service
+     dockerfile:Dockerfile
+     ports:
+       -8082:8082
+       links:
+       -"user:user-service"
+     
+
+----------------------
+Dockerfile
+FROM openjdk:11
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} department-service.jar
+ENTRYPOINT ["java",".jar","/department-service.jar"]
+------------------
