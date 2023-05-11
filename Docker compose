@@ -19,6 +19,18 @@ services:
        -8082:8082
        links:
        -"user:user-service"
+---------------------------------------------------
+docker-compose config------------- same output as yml file 
+docker-compose build
+docker-commpose up -d   -----
+docker-compose ps
+docker-commpose images
+docker-compose up -d build ----both command in one line
+docker-compose stop ------both services are stop
+docker-compose start------both services are start
+docker-compose kill
+----------------------------------------------------------
+
      
 
 ----------------------
