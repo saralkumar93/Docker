@@ -29,6 +29,14 @@ docker-compose up -d build ----both command in one line
 docker-compose stop ------both services are stop
 docker-compose start------both services are start
 docker-compose kill
+docker-compose logs ---both
+docker-compose logs user-service---single
+docker-compose logs department-service
+docker-compose exec user bash ----user contains
+docker-compose down
+
+
+
 ----------------------------------------------------------
 
      
